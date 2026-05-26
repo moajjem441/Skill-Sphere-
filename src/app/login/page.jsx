@@ -14,6 +14,7 @@ const LogInPage = () => {
         router.push('/login')
         tost.success("Login successful!");
     };
+    
 
     return (
         <div className="flex items-center justify-center h-screen">
