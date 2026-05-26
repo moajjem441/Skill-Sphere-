@@ -1,4 +1,5 @@
 'use client'
+import BackButton from '@/components/BackButton';
 import { authClient } from '@/lib/auth-client';
 import { Button, Form } from '@heroui/react';
 import { useRouter } from 'next/navigation';
@@ -56,9 +57,13 @@ const Page = () => {
                             className="input input-bordered w-full rounded-2xl text-white"
                         />
                     </div>
-                    <Button type="submit" variant="primary" className="w-full rounded-2xl">
+                    <div className="flex items-center justify-between">
+                        <Button type="submit" variant="primary" className=" rounded-xl">
                         Update Profile
                     </Button>
+
+                    <BackButton></BackButton>
+                    </div>
                 </Form>
             </div>
         </div>

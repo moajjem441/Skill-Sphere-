@@ -1,5 +1,6 @@
 import {Avatar, Button, Card} from "@heroui/react";
 import Link from "next/link";
+import BackButton from "./BackButton";
 
 const ProfileCard = ({ user }) => {
     // const {name,email,image} = user ;
@@ -14,10 +15,12 @@ const ProfileCard = ({ user }) => {
   <div className="card-body">
     <h2 className="card-title">{user?.name}</h2>
     <p>{user?.email}</p>
-    <div className="card-actions justify-end">
+    <div className="card-actions justify-between p-2">
       <Link href="/edit-profile">
         <button className="btn btn-primary">Edit Profile</button>
       </Link>
+
+      <BackButton></BackButton>
     </div>
   </div>
 </div>
