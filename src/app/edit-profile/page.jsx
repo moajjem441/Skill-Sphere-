@@ -58,13 +58,17 @@ const Page = () => {
                         />
                     </div>
                     <div className="flex items-center justify-between">
-                        <Button type="submit" variant="primary" className=" rounded-xl">
+                        <Button type="submit" variant="primary" className="w-[80%] mx-auto rounded-xl">
                         Update Profile
                     </Button>
 
-                    <BackButton></BackButton>
+    
                     </div>
                 </Form>
+
+                 <div className="flex justify-center">
+                    <BackButton></BackButton>
+                 </div>
             </div>
         </div>
     );

@@ -43,7 +43,7 @@ const AllCoursesPage = () => {
    
 
     return (
-        <div className='mt-15'>
+        <div className='mt-15 max-w-11/12 mx-auto'>
             <div className="m-4 max-w-5xl mx-auto">
                 <label className="input w-full max-w-5xl flex items-center gap-2 rounded-full">
                     <input 

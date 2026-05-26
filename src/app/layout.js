@@ -26,22 +26,17 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    
-      suppressHydrationWarning
+      suppressHydrationWarning 
     >
-      <body className="min-h-full max-w-full p-4 mx-auto flex flex-col suppressHydrationWarning={true}">
-     
-     <Navbar></Navbar>
-       <main>
-       {/* <AllCoursesPage></AllCoursesPage> */}
-         {children}
-         {/* <Animation></Animation> */}
-         
-       </main>
-
-       <Footer></Footer>
-      <Toaster />
-        </body>
+      
+      <body className="min-h-full max-w-full p-4 mx-auto flex flex-col">
+        <Navbar />
+        <main>
+          {children}
+        </main>
+        <Footer />
+        <Toaster />
+      </body>
     </html>
   );
 }
