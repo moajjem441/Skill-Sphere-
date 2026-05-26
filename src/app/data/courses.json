@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "instructor": "John Doe",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Learn full-stack web development from scratch.",
+    "image": "https://img-c.udemycdn.com/course/480x270/6346777_5b47_2.jpg",
+    "category": "Development"
+  },
+  {
+    "id": 2,
+    "title": "Advanced JavaScript Mastery",
+    "instructor": "Sarah Smith",
+    "duration": "15 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Master modern JavaScript concepts and ES6+ features.",
+    "image": "https://images.ctfassets.net/aq13lwl6616q/llkUpPk1NrKR5BMEcfyrc/42ebd1b27f3adb25c4a73fa6de52cd06/advanced_javascript_concepts_cover_photo_new.png",
+    "category": "Programming"
+  },
+  {
+    "id": 3,
+    "title": "Python for Beginners",
+    "instructor": "Michael Lee",
+    "duration": "18 hours",
+    "rating": 4.9,
+    "level": "Beginner",
+    "description": "Start coding in Python with practical projects.",
+    "image": "https://www.skill-up.org/wp-content/uploads/2023/06/Python-for-beginners.webp",
+    "category": "Programming"
+  },
+  {
+    "id": 4,
+    "title": "UI/UX Design Fundamentals",
+    "instructor": "Emma Watson",
+    "duration": "12 hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "description": "Learn the basics of user interface and user experience design.",
+    "image": "https://img.magnific.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg?semt=ais_hybrid&w=740&q=80",
+    "category": "Design"
+  },
+  {
+    "id": 5,
+    "title": "React & Next.js Complete Guide",
+    "instructor": "David Miller",
+    "duration": "22 hours",
+    "rating": 4.9,
+    "level": "Intermediate",
+    "description": "Build modern web applications using React and Next.js.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLZDp9FHrjfeJUMVQUOuLss5bUzT0QGWcaZA&s",
+    "category": "Development"
+  },
+  {
+    "id": 6,
+    "title": "Machine Learning Essentials",
+    "instructor": "Sophia Brown",
+    "duration": "25 hours",
+    "rating": 4.8,
+    "level": "Advanced",
+    "description": "Understand machine learning algorithms and AI basics.",
+    "image": "https://d1rwhvwstyk9gu.cloudfront.net/qi-cms-blog-prod/2026/04/Machine-Learning-Basics.png",
+    "category": "AI & ML"
+  },
+  {
+    "id": 7,
+    "title": "Cybersecurity Basics",
+    "instructor": "James Wilson",
+    "duration": "14 hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "description": "Learn essential cybersecurity concepts and best practices.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfvek9X6uD2WWcDcixavRRoC7iuHGRB8bVMw&s",
+    "category": "Security"
+  },
+  {
+    "id": 8,
+    "title": "Flutter App Development",
+    "instructor": "Olivia Davis",
+    "duration": "19 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Create beautiful cross-platform mobile applications with Flutter.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShpH7UhNyL2C2IJ5Dgl-LmQdMnJ2z8al6mIQ&s",
+    "category": "Mobile Development"
+  },
+  {
+    "id": 9,
+    "title": "Data Structures & Algorithms",
+    "instructor": "Robert Johnson",
+    "duration": "30 hours",
+    "rating": 4.9,
+    "level": "Advanced",
+    "description": "Improve your problem-solving skills with DSA concepts.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR121tNr0pTeA7SCEKWGs4yN98waOyaUceCFA&s",
+    "category": "Computer Science"
+  },
+  {
+    "id": 10,
+    "title": "Digital Marketing Strategy",
+    "instructor": "Emily Clark",
+    "duration": "10 hours",
+    "rating": 4.4,
+    "level": "Beginner",
+    "description": "Learn SEO, social media, and online marketing strategies.",
+    "image": "https://www.shutterstock.com/image-photo/internet-business-technology-network-concept-260nw-2476823445.jpg",
+    "category": "Marketing"
+  }
+]
