@@ -14,6 +14,7 @@ export default function NotFound() {
           Page Not Found
         </h2>
 
+
         {/* Description */}
         <p className="text-gray-500 mt-2">
           Sorry, the page you are looking for doesn’t exist or has been moved.
