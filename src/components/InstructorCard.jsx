@@ -4,7 +4,8 @@ import Link from 'next/link';
 
 const InstructorCard = ({ instructor }) => {
     return (
-        <div className="card bg-base-100 w-96 h-96 shadow-sm rounded-4xl hover:scale-105 transition-transform duration-700">
+       
+            <div className="card  bg-base-100 w-full h-96 shadow-sm rounded-4xl hover:scale-105 transition-transform duration-700">
 
             <figure>
                 <img
@@ -39,6 +40,7 @@ const InstructorCard = ({ instructor }) => {
                     </div> */}
             </div>
         </div>
+       
     );
 };
 

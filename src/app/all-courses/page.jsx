@@ -12,11 +12,11 @@ const AllCoursesPage = () => {
         ? allCourses.filter(course => course.title.toLowerCase().includes(searchInput.toLowerCase())) 
         : allCourses;
 
-    // লুপের বাইরে useTrail ব্যবহার করা হচ্ছে
+   
    const trails = useTrail(filteredCourses.length, {
     from: { opacity: 0, transform: "translateY(40px)" },
     to: { opacity: 1, transform: "translateY(0px)" },
-    // নিচের যেকোনো একটি ব্যবহার করতে পারেন:
+  
     config: config.wobbly,      // কিছুটা বাউন্সি ইফেক্ট দিবে
     // config: config.gentle,   // খুব মসৃণ এবং ধীরে হবে
     // config: { duration: 500 } // নির্দিষ্ট সময় ধরে ট্রানজিশন হবে
@@ -37,9 +37,9 @@ const AllCoursesPage = () => {
             </div>
 
             <h1 className="text-3xl font-bold mb-6 text-center text-cyan-400">All Courses</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
                 {trails.map((style, index) => (
-                    <animated.div key={filteredCourses[index].id} style={style}>
+                    <animated.div key={filteredCourses[index].id} style={style} cl>
                         <AllCoursesCard course={filteredCourses[index]} index={index} />
                     </animated.div>
                 ))}

@@ -5,8 +5,8 @@ import { FaRegStar } from 'react-icons/fa';
 const Top3CourseCard = ({ course }) => {
     // console.log("Course : ", course)
     return (
-        <div>
-            <div className="card  bg-base-100 w-96 h-96 shadow-sm rounded-4xl hover:scale-105 transition-transform duration-700">
+        <div className="max-w-full">
+            <div className="card  bg-base-100 w-full h-96 shadow-sm rounded-4xl hover:scale-105 transition-transform duration-700">
                 <figure>
                     <img width={400} height={150} className="rounded-t-4xl"
                         src={course.image}

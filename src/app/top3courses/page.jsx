@@ -14,7 +14,7 @@ const Top3CoursesPage = () => {
 
         <div className='mt-15'>
             <h1 className="text-3xl font-bold mb-6 text-center text-cyan-400">Top Three Courses</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-full mx-auto ">
             
 
             {top3courses.map((course, index) => {
@@ -26,7 +26,7 @@ const Top3CoursesPage = () => {
                 });
 
                 return (
-                    <animated.div key={course.id} style={style}>
+                    <animated.div key={course.id} style={style} >
                         
                         <Top3CourseCard course={course} />
                     </animated.div>
