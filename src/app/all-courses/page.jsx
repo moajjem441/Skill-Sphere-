@@ -11,15 +11,15 @@ const AllCoursesPage = () => {
     const allCourses = coursesData;
     const [searchInput, setSearchInput] = useState("");
 
-    const {data:session,isPending}=authClient.useSession();
-    // const user=session?.user;
+    // const {data:session,isPending}=authClient.useSession();
+    // // const user=session?.user;
 
    
-    useEffect(()=>{
-        if(!isPending && !session){
-            router.push("login")
-        }
-    },[session,isPending,router])
+    // useEffect(()=>{
+    //     if(!isPending && !session){
+    //         router.push("login")
+    //     }
+    // },[session,isPending,router])
   
 
     const filteredCourses = searchInput 

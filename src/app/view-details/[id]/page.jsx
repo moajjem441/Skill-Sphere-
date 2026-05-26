@@ -1,5 +1,8 @@
 import coursesData from "@/app/data/courses.json";
 import BackButton from "@/components/BackButton";
+import { auth } from "@/lib/auth";
+import { headers } from "next/headers";
+import { redirect } from "next/navigation";
 import { FaRegStar } from "react-icons/fa";
 
 
@@ -20,7 +23,20 @@ const DetailsPage = async ({ params }) => {
 
     // console.log("courses Data:",coursesData)
 
-    
+    const session = await auth.api.getSession({
+        headers: await headers()
+    })
+
+    if(!session){
+        redirect("/login");
+    }
+
+    // useEffect(()=>{
+    //     if(!session){
+    //         redirect("/login")
+    //     }
+    // },[session])
+
 
     const course = coursesData?.find(
         course => parseInt(course.id) === parseInt(id)

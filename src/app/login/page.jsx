@@ -76,7 +76,7 @@ const LogInPage = () => {
                             type="email"
                             name="email"
                             placeholder="your email"
-                            className="input input-bordered w-full rounded-2xl"
+                            className="input input-bordered text-white w-full rounded-2xl"
                         />
                     </div>
 
