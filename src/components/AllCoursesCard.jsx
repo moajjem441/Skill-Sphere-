@@ -2,9 +2,13 @@ import { FaRegStar } from 'react-icons/fa';
 import Link from 'next/link';
 import React from 'react';
 
-const AllCoursesCard = ({course}) => {
+const AllCoursesCard = ({ course }) => {
     return (
-       <div>
+        <div>
+
+           
+
+
             <div className="card  bg-base-100 w-full h-96 shadow-sm rounded-4xl hover:scale-105 transition-transform duration-700">
                 <figure>
                     <img width={400} height={150} className="rounded-t-4xl"

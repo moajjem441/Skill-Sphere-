@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
     
       suppressHydrationWarning
     >
-      <body className="min-h-full max-w-11/12 mx-auto flex flex-col suppressHydrationWarning={true}">
+      <body className="min-h-full max-w-full p-4 mx-auto flex flex-col suppressHydrationWarning={true}">
      
      <Navbar></Navbar>
        <main>
