@@ -20,6 +20,8 @@ const DetailsPage = async ({ params }) => {
 
     // console.log("courses Data:",coursesData)
 
+    
+
     const course = coursesData?.find(
         course => parseInt(course.id) === parseInt(id)
     );
