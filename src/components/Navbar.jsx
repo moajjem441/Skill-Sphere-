@@ -2,15 +2,22 @@
 import { authClient } from '@/lib/auth-client';
 import { Button } from '@heroui/react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
+import {Avatar} from "@heroui/react";
 
 export default function Navbar() {
     const pathname = usePathname();
+    const router =useRouter();
 
     const {data:session}=authClient.useSession();
     const user=session?.user;
 
     //  console.log("Session Data in Navbar:", session);
+
+    const handleLogout = async () => {
+        await authClient.signOut();
+        router.push('/login');
+    }
 
     return (
         <div className="navbar bg-base-100 shadow-sm max-w-11/12 mx-auto rounded-3xl p-5 mt-5">
@@ -66,7 +73,9 @@ export default function Navbar() {
                 </li>
 
                 <li>
-                    <a href="/login" ><Button variant="danger">Log Out</Button></a>
+                    <Button variant="danger" onClick={handleLogout}>
+                        Log Out
+                    </Button>
                 </li>
 
                     </>
@@ -74,8 +83,12 @@ export default function Navbar() {
                     :
                     <>
 
-                    <li><Link href="/register">Register</Link></li>
-                <li><Link href="/login">Log In</Link></li>
+                <li><Link href="/login" className="btn btn-ghost font-bold">
+                        Log In
+                    </Link></li>
+                    <li><Link href="/register" className="btn btn-ghost font-bold">
+                        Register
+                    </Link></li>
                     </>
                 }
             
