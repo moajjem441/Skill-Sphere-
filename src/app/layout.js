@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import 'animate.css';
-import AllCoursesPage from "./all-courses/page";
+import { Toaster } from "react-hot-toast";
 
 
 const geistSans = Geist({
@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
        </main>
 
        <Footer></Footer>
-        
+      <Toaster />
         </body>
     </html>
   );
