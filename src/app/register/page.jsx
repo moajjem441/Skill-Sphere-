@@ -8,7 +8,7 @@ import React from 'react';
 const RegisterPage = () => {
     const router = useRouter();
 
-    const handleRegisterSubmit = (e) => {
+    const handleRegisterSubmit = async (e) => {
         e.preventDefault();
 
         const formData = new FormData(e.currentTarget);
@@ -16,8 +16,30 @@ const RegisterPage = () => {
 
         console.log("Form Data :", data);
 
-        router.push('/login')
-        toast.success("Registration successful! Please login to your account.");
+        const {name,email,photoURL,password}= data;
+
+        try{
+            const {data:res,error}= await authClient.signUp.email({
+            name,
+            email,
+            photoURL,
+            password
+        })
+
+        if(!res.ok){
+            toast.error(error.message || "Registration failed. Please try again.");
+            return;
+        }
+
+        if(res.ok){
+            toast.success("Registration successful! Please login to your account.");
+            router.push('/login')
+        }
+
+        }catch(error){
+            toast.error(error.message || "An unexpected error occurred. Please try again.");
+        }
+        
     };
 
     return (
@@ -38,7 +60,7 @@ const RegisterPage = () => {
                             type="text"
                             name="name"
                             placeholder="your name"
-                            className="input input-bordered w-full rounded-2xl"
+                            className="input input-bordered w-full rounded-2xl text-white"
                         />
                     </div>
 
@@ -49,7 +71,7 @@ const RegisterPage = () => {
                             type="email"
                             name="email"
                             placeholder="your email"
-                            className="input input-bordered w-full rounded-2xl"
+                            className="input input-bordered w-full rounded-2xl text-white"
                         />
                     </div>
 
@@ -60,7 +82,7 @@ const RegisterPage = () => {
                             type="url"
                             name="photoURL"
                             placeholder="your photo url"
-                            className="input input-bordered w-full rounded-2xl"
+                            className="input input-bordered w-full rounded-2xl text-white"
                         />
                     </div>
 
@@ -71,7 +93,7 @@ const RegisterPage = () => {
                             type="password"
                             name="password"
                             placeholder="your password"
-                            className="input input-bordered w-full rounded-2xl"
+                            className="input input-bordered w-full rounded-2xl text-white"
                         />
                     </div>
 

@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+import { useRouter } from 'next/navigation';
+
 
 const LogInPage = () => {
      const router =useRouter();
@@ -14,7 +16,7 @@ const LogInPage = () => {
         router.push('/login')
         tost.success("Login successful!");
     };
-    
+
 
     return (
         <div className="flex items-center justify-center h-screen">
