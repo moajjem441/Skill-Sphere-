@@ -62,3 +62,43 @@ tailwindcss
 @heroui/react
 better-auth
 react-icons
+
+
+
+⚙️ Environment Variables
+
+Create a .env.local file and add:
+
+BETTER_AUTH_URL=http://localhost:3000
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+
+
+
+📂 Project Structure
+Home Page (Hero, Courses, Trending Section)
+All Courses Page
+Course Details Page (Protected Route)
+Login / Register Pages
+My Profile Page
+🚀 Installation
+git clone https://github.com/your-username/skillsphere.git
+cd skillsphere
+npm install
+npm run dev
+🚀 Deployment
+
+Recommended platform:
+
+Vercel
+
+📌 Notes
+No email verification implemented (as per assignment requirement)
+Fully responsive for all devices
+Clean and modular code structure
+
+
+👨‍💻 Author
+
+Made with ❤️ by Moajjem Hossain
