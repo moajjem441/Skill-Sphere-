@@ -52,12 +52,20 @@ const LogInPage = () => {
 
 
 
-    const signIn = async () => {
-  const data = await authClient.signIn.social({
-    provider: "google",
-    callbackURL: "/",
-  });
-};
+     const GoogleSignIn = async () => {
+       try {
+           await authClient.signIn.social({
+               provider: "google",
+               callbackURL: "/",
+           });
+   
+       } catch (error) {
+           console.error(error);
+           toast.error("Google login failed");
+       }
+   };
+
+   
 
     return (
         <div className="flex items-center justify-center h-screen">
