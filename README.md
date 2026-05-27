@@ -9,7 +9,7 @@ It provides authentication, protected routes, course browsing, and a responsive 
 
 ## 🌐 Live URL
 
-👉 https://your-live-link.vercel.app
+👉https://skill-sphere-taupe.vercel.app
 
 ---
 
