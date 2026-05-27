@@ -37,18 +37,18 @@ const LogInPage = () => {
 
 
 
-            const signIn = async () => {
-  const data = await authClient.signIn.social({
-    provider: "google",
-  });
-};
+//             const signIn = async () => {
+//   const data = await authClient.signIn.social({
+//     provider: "google",
+//   });
+// };
 
-  if(data){
-          router.push('/')
-        toast.success("Login successful!");
-        }
+//   if(data){
+//           router.push('/')
+//         toast.success("Login successful!");
+//         }
 
-    };
+//     };
 
 
 
@@ -65,7 +65,7 @@ const LogInPage = () => {
        }
    };
 
-   
+
 
     return (
         <div className="flex items-center justify-center h-screen">
