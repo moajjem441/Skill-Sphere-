@@ -2,6 +2,7 @@ import Banner from "@/components/Banner";
 import Top3CoursesPage from "./top3courses/page";
 import LearningTips from "@/components/LearningTips";
 import TopInstructorPage from "./topinstructor/page";
+import NewReleasedCoursesPage from "./new-released/page";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Top3CoursesPage></Top3CoursesPage>
       <LearningTips></LearningTips>
       <TopInstructorPage></TopInstructorPage>
+      <NewReleasedCoursesPage></NewReleasedCoursesPage>
     </div>
   );
 }
