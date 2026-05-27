@@ -40,6 +40,7 @@ const instructors = [
 const TopInstructorPage = () => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+          <h1 className="text-3xl font-bold mb-3 mt-4 text-center text-purple-400 col-span-full">Top Instructors</h1>
             {instructors.map(ins => (
                 <InstructorCard key={ins.id} instructor={ins} />
             ))}
