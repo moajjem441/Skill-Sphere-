@@ -77,20 +77,21 @@ GOOGLE_CLIENT_SECRET=your_google_client_secret
 
 
 📂 Project Structure
-Home Page (Hero, Courses, Trending Section)
+Home Page (Banner, Courses, Trending Section)
 All Courses Page
 Course Details Page (Protected Route)
 Login / Register Pages
 My Profile Page
+
+
 🚀 Installation
-git clone https://github.com/your-username/skillsphere.git
+https://github.com/moajjem441/Skill-Sphere-
 cd skillsphere
+
 npm install
 npm run dev
 🚀 Deployment
-
 Recommended platform:
-
 Vercel
 
 📌 Notes
