@@ -3,14 +3,14 @@ import { authClient } from '@/lib/auth-client';
 import { Button } from '@heroui/react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation'
-import {Avatar} from "@heroui/react";
+import { Avatar } from "@heroui/react";
 
 export default function Navbar() {
     const pathname = usePathname();
-    const router =useRouter();
+    const router = useRouter();
 
-    const {data:session}=authClient.useSession();
-    const user=session?.user;
+    const { data: session } = authClient.useSession();
+    const user = session?.user;
 
     //  console.log("Session Data in Navbar:", session);
 
@@ -43,9 +43,14 @@ export default function Navbar() {
 
                     </ul>
                 </div>
-                <h1 className="animate__animated animate__bounce">SkillSphere</h1>
-                {/* <a className="btn btn-ghost text-xl">SkillSphere</a> */}
+
+
+                <h1 className="animate__animated animate__bounce bg-gradient-to-r from-cyan-500 to-pink-800 text-white font-bold px-4 py-2 rounded">
+                    SkillSphere
+                </h1>                {/* <a className="btn btn-ghost text-xl">SkillSphere</a> */}
             </div>
+
+
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 ">
                     <li>
@@ -60,40 +65,40 @@ export default function Navbar() {
                 </ul>
             </div>
             <div className="navbar-end">
-               <ul className='flex gap-2 items-center'>
-                {
-                    user ?
-                    <>
-                     <li>
-                    <Avatar>
-        <Avatar.Image alt={user?.name} src={user?.image} />
-        <Avatar.Fallback>{user?.name}</Avatar.Fallback>
-      </Avatar>
-                    
-                </li>
+                <ul className='flex flex-col gap-2 items-center  sm:flex-row '>
+                    {
+                        user ?
+                            <>
+                                <li>
+                                    <Avatar>
+                                        <Avatar.Image alt={user?.name} src={user?.image} />
+                                        <Avatar.Fallback>{user?.name}</Avatar.Fallback>
+                                    </Avatar>
 
-                <li>
-                    <Button variant="danger" onClick={handleLogout}>
-                        Log Out
-                    </Button>
-                </li>
+                                </li>
 
-                    </>
+                                <li>
+                                    <Button variant="danger" size="sm" className="sm:size-md" onClick={handleLogout}>
+                                        Log Out
+                                    </Button>
+                                </li>
 
-                    :
-                    <>
+                            </>
 
-                <li><Link href="/login" className="btn btn-ghost font-bold">
-                        Log In
-                    </Link></li>
-                    <li><Link href="/register" className="btn btn-ghost font-bold">
-                        Register
-                    </Link></li>
-                    </>
-                }
-            
+                            :
+                            <>
+
+                                <li><Link href="/login" className="btn btn-ghost font-bold">
+                                    Log In
+                                </Link></li>
+                                <li><Link href="/register" className="btn btn-ghost font-bold">
+                                    Register
+                                </Link></li>
+                            </>
+                    }
+
                 </ul>
-             
+
             </div>
         </div>
     );
